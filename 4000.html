@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html  lang="en">
+<title>Hiking in The White Mountains</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Indie Flower", sans-serif}
+.w3-quarter img{margin-bottom: -6px; cursor: pointer}
+.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+
+.mydiv{
+     height: 50px;
+     background-image: url("imgs/cover.jpg");
+     background-size: cover;
+}
+
+</style>
+<body class="w3-light-grey">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">Close</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Home</a>
+  <a href="index.html#mtwash" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Mount Washington</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">4,000 Footers</a>
+  <a href="3000.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">3,000 Footers</a>
+  <a href="gear.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Hiking Gear</a>
+  <a href="feedback.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Contact</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding w3-xlarge">Hiking in The White Mountains</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+
+<h2 class=" w3-container w3-quarter w3-xxlarge"> 4,000 footers </h2>
+
+<div class="mydiv"> </div>
+
+ <div class="w3-row-padding w3-padding-16 w3-center" id="4000">
+    <div class="w3-quarter">
+      <img src="imgs/garfield.jpg" alt="mt.garfield" style="width:100%">
+      <h3>Mount Garfield</h3>
+      <p>Mount Garfield has an elevation of 4,501 feet. It is located in Franconia, New Hampshire. For a 4,000 footer it is a pretty easy hike. The last portion of the hike is steep, but the open view at the top is worth the effort.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="imgs/moosilauke.jpg" alt="mt.moosilauke" style="width:100%">
+      <h3>Mount Moosilauke</h3>
+      <p>Mount Moosilauke is a 4,000 footer located in Benton, New Hampshire. It is in the tenth highest mountain in the white mountain range at 4,802 feet. In 1860 there was a prospect house that was opened on the top of the mountain, but in 1942 it burned down. The stone foundation is still at the summit to this day.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="imgs/osceola.jpg" alt="mt.osceola" style="width:100%">
+      <h3>Mount Osceola</h3>
+      <p>Mount Osceola is located in the White Mountain National Forest. It's elevation is 4,315 feet. There was a fire look out tower at the top of the mountain but it was removed in the 1970's. There is a connector trail between Osceola and East Osceola that makes for an even better hike.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="imgs/owls.jpg" alt="mt.owl's head" style="width:100%">
+      <h3>Mount Owl's Head</h3>
+      <p>Owls Head is a 4,025 foot mountain in the White Mountains. It is part of the Pemigewasset Wilderness. This mountain is one of the only 4,000 footers in New Hampshire that does not have a maintained trail. However, the summit does not have the best views, but on the hike up the mountain there are some really good viewing areas.</p>
+    </div>
+  </div>
+
+  </div>
+<div class=" w3-center">
+<a href="http://4000footers.com/nh.shtml"> More 4,000 footers </a>
+</div>
+
+<!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+      <a href="#" class="w3-hover-text-blue"><i class="fa fa-facebook-official"></i></a>
+      <a href="#" class="w3-hover-text-red"><i class="fa fa-pinterest-p"></i></a>
+      <a href="#" class="w3-hover-text-blue"><i class="fa fa-linkedin"></i></a>
+      <p class="w3-tiny">Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+  
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+</body>
+
+</html>

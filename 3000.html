@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html  lang="en">
+<title>Hiking in The White Mountains</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Indie Flower", sans-serif}
+.w3-quarter img{margin-bottom: -6px; cursor: pointer}
+.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+</style>
+
+<body class="w3-light-grey">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">Close</a>
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Home</a>
+  <a href="index.html#mtwash" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Mount Washington</a>
+  <a href="4000.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">4,000 Footers</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">3,000 Footers</a>
+  <a href="gear.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Hiking Gear</a>
+  <a href="feedback.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Contact</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding w3-xlarge">Hiking in The White Mountains</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+
+<h2 class=" w3-container w3-quarter w3-xxlarge"> 3,000 footers </h2>
+ <div class="w3-row-padding w3-padding-16 w3-center" id="4000">
+    <div class="w3-quarter">
+      <img src="imgs/chocorua.jpg" alt="mt.garfield" style="width:100%">
+      <h3>Mount Chocorua</h3>
+      <p> Mount Chocorua's elevation is 3,478 feet. It is located in Albany, New Hampshire. While this mountain is not a 4,000 footer, it is still a beautiful hike that has a breathtaking view from the top. There are a few different trails to get to the summit. Two of the more popular trails are the Piper trail and the Carterledge trail.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="imgs/hitchcock.jpg" alt="mt.moosilauke" style="width:100%">
+      <h3>Mount Hitchcock</h3>
+      <p>Mount Hitchcock is located in Lincoln, New Hampshire. It's elevation is 3,620 feet. This mountain towers over the Kancamagus highway. However, the peek of this mountain is wooded which provides only a few views. This mountain is one of the top one hundred highest mountains in New Hampshire.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="imgs/sandwich.jpg" alt="mt.osceola" style="width:100%">
+      <h3>Sandwich Mountain</h3>
+      <p>Sandwich mountain is located just south of the Waterville Valley. This mountains elevation is 3,980 feet just 20 feet short of being one of the many 4,000 footers in New Hampshire. The top of the mountain has great views. This mountain would be more popular amoung man hikers if it was 2o feet taller because it has a well maintained trail thats very easy to access.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="imgs/nancy.jpg" alt="mt.owl's head" style="width:100%">
+      <h3>Mount Nancy</h3>
+      <p>Mount Nancy is located in Lincoln New Hampshire with an elevation of 3,926 feet. This mountain starts off as an easy hike but once you get further in the trail becomes very steep before leveling off to the peek of the mountain. Another obsticle in hiking this mountain is that it does not have a maintained trail to the top.</p>
+    </div>
+  </div>
+
+  </div>
+
+<div class=" w3-center">
+<a href="http://sectionhiker.com/the-new-hampshire-3000-footers/"> More 3,000 footers </a>
+</div>
+
+<!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+      <a href="#" class="w3-hover-text-blue"><i class="fa fa-facebook-official"></i></a>
+      <a href="#" class="w3-hover-text-red"><i class="fa fa-pinterest-p"></i></a>
+      <a href="#" class="w3-hover-text-blue"><i class="fa fa-linkedin"></i></a>
+      <p class="w3-tiny">Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+</body>
+
+</html>

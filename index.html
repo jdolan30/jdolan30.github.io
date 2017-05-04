@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<title>Hiking in The White Mountains</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Indie Flower", sans-serif}
+.w3-quarter img{margin-bottom: -6px; cursor: pointer}
+.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+</style>
+<body class="w3-light-grey">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+  <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">Close</a> 
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Home</a>
+  <a href="#mtwash" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Mount Washington</a> 
+  <a href="4000.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">4,000 Footers</a> 
+  <a href="3000.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">3,000 Footers</a> 
+  <a href="gear.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Hiking Gear</a>
+  <a href="feedback.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">Contact</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding w3-xlarge">Hiking in The White Mountains</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content" style="max-width:1600px;margin-top:83px">
+
+  <!-- About section -->
+  <div class="w3-container w3-light-gray w3-center w3-text-black w3-padding-32">
+    <h4 class="w3-jumbo w3-animate-top"><b>Mountain Views</b></h4>
+    <img src="imgs/cover.jpg" alt="View" class="w3-image w3-padding-32" width="1800" height="1850">
+    <div>
+    <div class="w3-content w3-justify" id="mtwash" style="max-width:600px; padding-top: 75px;">
+      <h4>White Mountain Hiking Guide</h4>
+      <p>The White Mountains are one of the best hiking locations in New England. It is home to several mountains that are on the appalation hiking trail that runs through New Hampshire. The tallest mountain in New Hampshire is Mount Washington. Mount Washington is 6,289 feet tall and Can be very dangerous to climb depending on the time of year.  
+      </p>
+      <img src="imgs/IMG-map.gif" alt="View" class="w3-image w3-padding-32" width="1800" height="1850">
+      <hr class="w3-opacity">
+      </div>
+      </div>
+     
+      <h4 class="w3-padding-16 w3-center">Mount Washington Facts</h4>
+      <img src="imgs/mtwash.jpg" alt="View" class="w3-image w3-padding-32" width="1800" height="1850">
+      <div class="w3-row-padding w3-center w3-container" style="margin:0 -16px">
+        <div class="w3-margin-bottom w3-center">
+          <ul class="w3-ul w3-white w3-center">
+            <li class="w3-black w3-xlarge w3-padding-32 w3-center">The Tallest Mountain in New England</li>
+            <li class="w3-padding-16">Cog Railway</li>
+            <li class="w3-padding-16">Auto Road</li>
+            <li class="w3-padding-16">Tuckerman Ravine Trail</li>
+            <li class="w3-padding-16">Lion Head Trail</li>
+            <li class="w3-padding-16">
+              <h2>Mount Washington Observation Deck Live</h2>
+              <a href= "https://www.mountwashington.org/premium-content/webcam-videos/observation-deck.aspx"> Observation Deck </a>
+            </li>
+          </ul>
+        </div>
+        </div>
+        </div>
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-white w3-xlarge">
+      <a href="#" class="w3-hover-text-blue"><i class="fa fa-facebook-official"></i></a>
+      <a href="#" class="w3-hover-text-red"><i class="fa fa-pinterest-p"></i></a>
+      <a href="#" class="w3-hover-text-blue"><i class="fa fa-linkedin"></i></a>
+      <p class="w3-tiny">Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
+</html>
